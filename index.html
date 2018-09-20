@@ -11,13 +11,20 @@
   <div id="list-items" >Help</div>
   
   <!-- ___MVC___ -->
-  <script src="note-model.js"></script>
-  <script src="note-list-model.js"></script>
-  <script src="note-list-view.js"></script>
-  <script src="note-controller.js"></script>
+  <script src="models/note-model.js"></script>
+  <script src="models/note-list-model.js"></script>
+  <script src="views/note-list-view.js"></script>
+  <script src="controllers/note-controller.js"></script>
 
   <script type="text/javascript">
-    var controller = new NoteController()
+    var noteList = new NoteListModel()
+    var note1 = new Note('haribo')
+    var note2 = new Note('congee')
+    var note3 = new Note('door')
+    noteList.add(note1.text)
+    noteList.add(note2.text)
+    noteList.add(note3.text)
+    var controller = new NoteController(noteList)
     controller.listItems();
   </script>
 
