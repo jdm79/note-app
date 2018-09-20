@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="media/css/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="src/media/css/style.css">
+  <title>James's Note App</title>
 </head>
 <body>
   <h2 >Note App</h2>
   <p id="demo"></p>
 
-  <form id="text" href="#new">
+  <form id="text" href="#">
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Add a note:</label>
       <textarea class="form-control" id="text-area" rows="3"></textarea>
@@ -23,10 +23,10 @@
   <div id="list-items"></div>
   
   <!-- ___MVC___ -->
-  <script src="models/note-model.js"></script>
-  <script src="models/note-list-model.js"></script>
-  <script src="views/note-list-view.js"></script>
-  <script src="controllers/note-controller.js"></script>
+  <script src="src/models/note-model.js"></script>
+  <script src="src/models/note-list-model.js"></script>
+  <script src="src/views/note-list-view.js"></script>
+  <script src="src/controllers/note-controller.js"></script>
 
   <script type="text/javascript">
     var noteList = new NoteListModel()
@@ -41,12 +41,12 @@
   </script>
 
   <!-- ___TESTS___ -->
-  <script src="tests/assert.js"></script>
-  <script src="tests/note-test.js"></script>
-  <script src="tests/note-model-test.js"></script>
-  <script src="tests/note-list-test.js"></script>
-  <script src="tests/note-list-view-test.js"></script>
-  <script src="tests/note-controller-test.js"></script>
+  <script src="src/tests/assert.js"></script>
+  <script src="src/tests/note-test.js"></script>
+  <script src="src/tests/note-model-test.js"></script>
+  <script src="src/tests/note-list-test.js"></script>
+  <script src="src/tests/note-list-view-test.js"></script>
+  <script src="src/tests/note-controller-test.js"></script>
 
 </body>
 </html>
