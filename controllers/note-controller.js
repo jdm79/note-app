@@ -4,16 +4,15 @@
     this._noteList = list
     this._noteListView = view
   }
-  NoteController.prototype.setEventListeners = function(){
-    document.getElementById('submit')
-      .addEventListener('submit', this.log(event));
+  NoteController.prototype.setEventListeners = function(event){
+    window.addEventListener('submit', this.log.bind(this));
+    // event.preventDefault();
 
   }
 
   NoteController.prototype.log = function(event){
     console.log("this button has been clicked")
-    event.preventDefault();
-
+    // event.preventDefault();
   }
 
   NoteController.prototype.listItems = function() {
