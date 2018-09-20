@@ -6,13 +6,14 @@
   }
   NoteController.prototype.setEventListeners = function(){
     document.getElementById('submit')
-      .addEventListener('submit', this.submit.bind(this));
+      .addEventListener('submit', this.log(event));
+
   }
 
-  NoteController.prototype.submit = function(){
-    let noteInput = document.getElementById('text').value;
-    this.displayResult(noteInput);
+  NoteController.prototype.log = function(event){
+    console.log("this button has been clicked")
     event.preventDefault();
+
   }
 
   NoteController.prototype.listItems = function() {

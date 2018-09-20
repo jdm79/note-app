@@ -14,8 +14,9 @@
     noteList.add(note3.text)
     var noteController = new NoteController(noteList)
     noteController.listItems()
-    var htmlString =  `<ul><li><div>haribo</div></li><li><div>congee</div></li><li><div>door</div></li></ul>`
+    var htmlString =  `<ul class="list-group"><li class="list-group-item"><div>haribo</div></li><li class="list-group-item"><div>congee</div></li><li class="list-group-item"><div>door</div></li></ul>`
     innerHTML = document.getElementById('list-items').innerHTML  
+    console.log(innerHTML)
     assert.isTrue(innerHTML === htmlString)
   }
 
