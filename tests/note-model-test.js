@@ -22,7 +22,7 @@
   function testNoteTextId() {
     var note = new Note("hello")
     console.log("this is our note id: " + note.id)
-    if(note.getNoteTextId() !== 3) {
+    if(note.getNoteTextId() !== 7) {
       throw new Error("Id not matching")
     } else {
       console.log("id probably worked")
