@@ -9,14 +9,13 @@
     var note1 = new Note('haribo')
     var note2 = new Note('congee')
     var note3 = new Note('door')
-    noteList.add(note1.text)
-    noteList.add(note2.text)
-    noteList.add(note3.text)
+    noteList.add(note1)
+    noteList.add(note2)
+    noteList.add(note3)
     var noteController = new NoteController(noteList)
     noteController.listItems()
-    var htmlString =  `<ul class="list-group"><li class="list-group-item"><div>haribo</div></li><li class="list-group-item"><div>congee</div></li><li class="list-group-item"><div>door</div></li></ul>`
+    var htmlString =  `<ul class="list-group"><a href="#notes/8"><li class="list-group-item"><div>haribo</div></li></a><a href="#notes/9"><li class="list-group-item"><div>congee</div></li></a><a href="#notes/10"><li class="list-group-item"><div>door</div></li></a></ul>`
     innerHTML = document.getElementById('list-items').innerHTML  
-    console.log(innerHTML)
     assert.isTrue(innerHTML === htmlString)
   }
 
