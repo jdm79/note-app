@@ -11,7 +11,6 @@
 
   NoteController.prototype.log = function(event){
     console.log(event)
-    document.getElementById('demo').innerHTML = "yo"
     event.preventDefault();
   }
 

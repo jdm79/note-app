@@ -15,9 +15,10 @@
     var noteListView = new NoteListView(noteListModelDouble) 
 
     assert.isTrue(noteListView.htmlize(noteListModelDouble.show()) === htmlString )
-    
   
   }
   testNoteListView()
+
+ 
 })(this)
 
